@@ -1,2 +1,3 @@
 # alx-low_level_programming
-C programming
+
+The directory for C programming in ALX Carriculeum.
