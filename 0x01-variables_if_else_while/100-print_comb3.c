@@ -10,13 +10,18 @@
 int main(void)
 {
 	int i;
+	int f;
+	int l;
 
 	for (i = 0; i < 100; i++)
 	{
-		if ((i/10) < (i%10))
+		f = i / 10;
+		l = i % 10;
+
+		if (f < l)
 		{
-			putchar(i/10 + '0');
-			putchar(i%10 + '0');
+			putchar(f + '0');
+			putchar(l + '0');
 			if (i != 89)
 			{
 				putchar(',');
