@@ -1,25 +1,29 @@
 #include "main.h"
 
 /**
- * print_diagonal
- * @n: number of times \ printed.
+ * print_diagonal - entry point
+ *@n: number of spaces
  *
- * Return: Nothing.
+ * Return: Nothing
  */
 void print_diagonal(int n)
 {
-	int i, j;
+	int row, num_lines;
 
 	if (n <= 0)
+	{
 		_putchar('\n');
+	}
 	else
 	{
-		for (i = 1; i <= n; i++)
+		for (row = 1; row <= n; row++)
 		{
-			if (i > 1)
+			if (row > 1)
 			{
-				for (j = 1; j <= i - 1; j++)
-					_putchar(' ');
+				for (num_lines = 1; num_lines <= row - 1; num_lines++)
+				{
+				_putchar(' ');
+				}
 			}
 			_putchar('\\');
 			_putchar('\n');
