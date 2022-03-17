@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "commit for the project 0x04-more_functions_nested_loops"
+git commit -m "commit changed cause of some issues."
 git push
