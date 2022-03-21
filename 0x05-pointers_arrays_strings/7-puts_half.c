@@ -9,9 +9,10 @@
 void puts_half(char *str)
 {
 	int len, n, i;
+
 	for (len = 0; str[len] != '\0'; len++)
 		;
-	len++;
+
 	if (len % 2 != 0)
 		len--;
 	n = len / 2;
