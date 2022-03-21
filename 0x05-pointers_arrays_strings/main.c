@@ -8,10 +8,9 @@
  */
 int main(void)
 {
-    char s[25] = "My School is Hailemichael";
+    char *str;
 
-    printf("%s\n", s);
-    rev_string(s);
-    printf("%s\n", s);
+    str = "0123456789";
+    puts2(str);
     return (0);
 }
