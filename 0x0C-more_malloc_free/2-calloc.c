@@ -11,12 +11,16 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *arry = NULL;
+	char *arry = NULL;
+	unsigned int i, t_size;
 
-	if (nmemb == 0 || size == 0)
+	if (nmemb <= 0 || size <= 0)
 		return (NULL);
-	arry = malloc(nmemb * size);
+	t_size = nmemb * size;
+	arry = malloc(t_size);
 	if (arry == NULL)
 		return (NULL);
+	for (i = 0; i < t_size; i++)
+		arry[i] = 0;
 	return (arry);
 }
